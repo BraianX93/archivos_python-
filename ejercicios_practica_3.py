@@ -28,8 +28,16 @@ def desafio():
 
     # Al final de esta función retornar (return) el stock total de tornillos
     # Comenzar aquí, recuerde el identado dentro de esta funcion
+    with open("stock.csv") as archivo:
+        data_stock =list(csv.DictReader(archivo))
     
+    total_tornillos = 0
+    
+    for i in data_stock:
+        total_tornillos += int( i ["tornillos"])
+        return total_tornillos
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     desafio()
+    print(desafio())
