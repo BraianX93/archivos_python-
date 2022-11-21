@@ -33,8 +33,15 @@ def desafio():
     # Al final de esta función retornar (return) la variable stock
 
     # Comenzar aquí, recuerde el identado dentro de esta funcion
-
-
+    stock = {}
+    stock["tornillos"] = 100
+    stock["tuercas"] = 150
+    stock["arandelas"] = 300
+    print (stock)
+    return stock       
+    
+    
+    
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     desafio()
